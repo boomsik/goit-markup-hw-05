@@ -100,9 +100,27 @@ color:var(--big-text) ;
 transition: color 250ms var(--transition-cubic-bezier);
 }
 
+.strip {
+position: relative;
+}
+
+.strip::after {
+    position: absolute;
+    left: 0;
+    bottom: -27.5px;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-nav-link);
+    pointer-events: none;
+    border-radius: 2px;
+}
+
 .header-link:hover{
     color: var(--color-nav-link);
 }
+
+
 
 .header-link:focus{
     color: var(--color-nav-link);
