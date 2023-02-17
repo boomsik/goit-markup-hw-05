@@ -14,6 +14,7 @@
 --color-border-four:rgba(46, 47, 66, 0.08);
 --color-social-media: rgba(255, 255, 255, 0.1);
 --color-social-hover: #31d0aa ; 
+--transition-cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
  
 
 }
@@ -96,6 +97,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color:var(--big-text) ;
+transition: color 250ms var(--transition-cubic-bezier);
 }
 
 .header-link:hover{
@@ -136,7 +138,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--little-text);
-
+transition: color 250ms var(--transition-cubic-bezier);
 }
 
 .address-link:is(:hover,:focus){
@@ -184,10 +186,11 @@ background-position: center;
     box-shadow: 0px 4px 4px var(--color-border-one);
     border-radius: 4px;
     border: none;
+    transition: background-color 250ms var(--transition-cubic-bezier);
 }
 
 .effective-btn:is(:hover,:focus){
-    background: var(--color-nav-link);
+    background-color: var(--color-nav-link);
 }
 
 
@@ -395,10 +398,11 @@ list-style-type: none;
     background-color: var(--button-web-color);
     border-radius: 50%;
     text-decoration: none;
+    transition: background-color 250ms var(--transition-cubic-bezier);
 }
 
 .social-link:is(:hover, :focus) {
-    background: var(--color-nav-link);
+    background-color: var(--color-nav-link);
 }
 
 .social-link svg{
@@ -453,6 +457,8 @@ height: 88px;
 color: var(--color-border-customers);
 border: 1px solid var(--color-border-customers);
 border-radius: 4px;
+transition: color 250ms var(--transition-cubic-bezier),
+    border-color 250ms var(--transition-cubic-bezier); ;
 }
 
 .customers-icon {
@@ -543,6 +549,7 @@ margin-right: 0;
     height: 40px;
     border-radius: 50%;
     background-color: var(--color-social-media);
+    transition: background-color 250ms var(--transition-cubic-bezier);
 }
 
 .media-link:is(:hover,:focus) {
@@ -594,6 +601,9 @@ background-color: var(--color-social-hover) ;
     color: var(--button-web-color);
     cursor: pointer;
     border: none;
+    transition: background-color 250ms var(--transition-cubic-bezier),
+        color 250ms var(--transition-cubic-bezier),
+        box-shadow 250ms var(--transition-cubic-bezier);
 
 }
 
@@ -631,7 +641,8 @@ background-color: var(--color-social-hover) ;
 
 .choise-link{
     display: inline-block;
-text-decoration: none;
+    text-decoration: none;
+    transition:box-shadow 250ms var(--transition-cubic-bezier);
 }
 
 .choise-link:is(:hover, :focus){
