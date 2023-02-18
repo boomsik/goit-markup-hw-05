@@ -52,7 +52,7 @@
 <section class="effective">
 <h1 class="effective-title">Effective Solutions
     for Your Business</h1>
-    <button class="effective-btn" type="button">Order Service</button>
+    <button class="effective-btn" data-modal-open type="button">Order Service</button>
 </section>
 
 <section class="opportunities">
@@ -379,6 +379,17 @@
 </div>
 
     </footer>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="modal-close" data-modal-close type="button">
+           <svg class="modal-close-icon">
+            <use href="./images/icons/sprite.svg#close"> </use>
+           </svg>
+        </button>
+    </div>
+</div>
+<script src="./js/modal.js">
 
+</script>
 </body>
 </html>
