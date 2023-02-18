@@ -172,11 +172,11 @@ margin: 0 auto;
 padding-top: 188px;
 padding-bottom: 188px;
  max-width: 1440px; 
-background-size: cover;
 background: var(--big-text);
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) 100%), url(../images/people-office.jpg);
 background-repeat: no-repeat;
 background-position: center;
+background-size: cover;
 }
 
 .effective-title {
@@ -504,6 +504,7 @@ transition: color 250ms var(--transition-cubic-bezier),
 
 .end-container{
     display: flex;
+    align-items: baseline;
 }
 
 .end-box{
